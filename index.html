@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Load Tailwind first -->
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    poppins: ["Poppins", "sans-serif"]
+                },
+                backgroundImage: {
+                    bannerImg: "url('asset28.png')",
+                    bannerImg2: "url('asset 29.svg')",
+                },
+                colors: {  /* Fix: 'colors' instead of 'color' */
+                  hex: "#183b56",
+                  pastelBlue: "#4fb3d4",
+                  vibrantBlue:"#2294ed",
+                  heading:"#183b56",
+                  para:"#577592",
+                  hoverchange:"#1d69a3",
+                }
+            }
+        }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/848d52ef32.js" crossorigin="anonymous"></script>
+  <style>
+    #banner{
+          margin-left: 200px;
+    }
+  </style>
+  <title>Tailwind Test</title>
+
+</head>
+<body class="font-poppins">
+  <!-- Banner -->
+  <nav class="bg-pastelBlue text-center w-full p-4 bg-bannerImg" style="background-size: 300px;">
+    <div class="">
+      <h2 class="font-poppins font-bold text-white"> 
+        <i class="fa-solid fa-bullhorn"></i>
+        New to Usability Hub: Open and closed card sorting! Read more
+        <i class="fa-solid fa-arrow-right"></i>
+      </h2>
+    </div>
+  </nav>
+  <div class="max-w-[2000px] relative">
+  <!-- INTRO-SECTION -->
+   <nav class="flex my-[18px]">
+    <!-- left part -->
+    <div class="font-poppins mx-[190px] cursor-pointer">
+      <img class="content-start mb-0 pb-0" src="asset 0.png" alt="#" width="200px" height="200px">
+    </div>
+    <!-- right part -->
+    <div class="flex mx-[120px] justify-between content-between">
+      <ul class="flex items-center space-x-[45px] font-bold font-poppins mr-[25px]">
+        <li class="hover:text-blue-500 cursor-pointer">Products</li>
+        <li class="hover:text-blue-500 cursor-pointer">Customers</li>
+        <li class="hover:text-blue-500 cursor-pointer">Pricing</li>
+        <li class="hover:text-blue-500 cursor-pointer">Resources</li>
+      </ul>
+      <button class="duration-1000 mb-0 mx-[17px] content-center p-0 border-2 border-gray-400 rounded-xl mr-[30px]
+      hover:border-blue-700 hover:text-blue-500 transition-all ease-in-out">
+        <a class="mx-4 mb-0 my-8 text-[16px] text-left" href="#">Sign in</a>
+      </button>
+
+      <button class="duration-1000 hover:bg-blue-700  ease-in-out border-2 border-gray-400 rounded-xl p-3 content-center text-white font-bold mb-0 bg-vibrantBlue ">
+        <a class="mx-1 my-8 mb-0 text-[16px] text-right" href="#">Sign up</a>
+      </button>
+    </div>
+   </nav>
+  
+
+
+   <!-- HERO SECTION 1 -->
+    <div class="relative mx-[150px] pb-[20px] flex flex-col max-w-[1478px] max-h-[4650px] items-center justify-center ">
+      <!-- Left Part -->
+      <div class="flex flex-col font-poppins mt-[80px] max-w-[544px] max-h-[246px] mx-[20px]">
+        <h1 class="font-bold font-poppins text-heading" style="font-size: 50px;">Design Confidently</h1>
+        <p class="text-xl text-para max-w-[544px] pb-2 px-1">UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
+        <div class="px-0 mx-0">
+        <button class="pb-3.5 pt-3.5 border-2 pr-4 pl-4 rounded-xl bg-vibrantBlue text-white content-center
+        hover:bg-hoverchange transition-all duration-1000 font-bold mt-[10px]">Get Started</button>
+        </div>
+      </div>
+      <!-- Right Part -->
+       <div class="absolute mx-[600px] mt-[20px]">
+        <img class="max-w-[545px] max-h-[405px]" src="asset 1.jpeg" alt="#">
+       </div>
+    </div>
+
+    <!-- HERO SECTION 2  -->
+     <div class="flex flex-col mt-[150px] mx-[150px]">
+      <!-- TOP PART -->
+      <div class="relative text-heading font-bold w-auto">
+        <h4 class="absolute place-content-center justify-between mx-[250px]">The world's best companies rely on UsabilityHub to make better design decisions.</h4>
+      </div>
+
+      <!-- BOTTOM PART -->
+      <div class="flex space-x-4 justify-between items-center mt-[45px]">
+        <img class="h-12" src="asset 2.png" alt="">
+        <img class="h-12" src="asset 3.png" alt="">
+        <img class="h-12" src="asset 4.png" alt="">
+        <img class="h-12" src="asset 5.png" alt="">
+        <img class="h-12" src="asset 6.png" alt="">
+        <img class="h-12" src="asset 7.svg" alt="">
+        <img class="h-12" src="asset 8.png" alt="">
+      </div>
+     </div>
+
+    <!-- HERO SECTION 3 -->
+     <div class="relative mx-[342px] mt-[80px] w-auto max-h-[800px] font-poppins">
+      <!-- TOP PART -->
+      <div class="mx-[20px] flex flex-col justify-between items-center">
+          <h3 class="font-poppins font-bold text-heading text-[32px]">Your user research Swiss Army knife</h3>
+          <button class="mt-3 shadow-blue-950 hover:text-blue-500 transition-all duration-800 ease-in-out 
+              font-medium hover:border-blue-500 border-2 border-heading px-4 py-2 rounded-xl">
+              See all features <i class="fa-solid fa-arrow-right"></i>
+          </button>
+      </div>
+  
+      <!-- Background Circle -->
+      <div class="absolute mt-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+          w-full h-full bg-no-repeat bg-blue-100 rounded-full opacity-30 z-[-10]">
+      </div>
+  
+      <!-- GRID LAYOUT -->
+      <div class="grid grid-cols-3 gap-8 max-w-5xl p-6">
+          <!-- Card Sorting -->
+          <div class="flex flex-col items-center text-center">
+              <div class="bg-blue-500 p-4 rounded-full">
+                  <img class="w-[40px]" src="asset 9.svg" alt="">
+              </div>
+              <h3 class="mt-4 font-semibold text-lg">Card sorting</h3>
+              <p class="text-gray-600">Discover how people group and label information.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+  
+          <!-- Prototype Tests -->
+          <div class="top-0 flex flex-col items-center text-center">
+              <div class="bg-pink-500 p-4 rounded-full">
+                  <img class="w-[30px]" src="asset 10.svg" alt="">
+              </div>
+              <h3 class="mt-0 font-semibold text-lg">Prototype tests</h3>
+              <p class="text-gray-600 w-auto">Discover how people navigate your Figma prototypes.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+  
+          <!-- First Click Tests -->
+          <div class="flex flex-col items-center text-center">
+              <div class="bg-purple-500 p-4 rounded-full">
+                  <img class="w-[40px]" src="asset 11.svg" alt="">
+              </div>
+              <h3 class="mt-4 font-semibold text-lg">First click tests</h3>
+              <p class="text-gray-600">Test interaction with first click and navigation tests.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+  
+          <!-- Design Surveys -->
+          <div class="flex flex-col items-center text-center">
+              <div class="bg-yellow-500 p-4 rounded-full">
+                  <img class="w-[40px]" src="asset 12.svg" alt="">
+              </div>
+              <h3 class="mt-4 font-semibold text-lg">Design surveys</h3>
+              <p class="text-gray-600">Get feedback on images, videos or audio files.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+  
+          <!-- Preference Tests -->
+          <div class="flex flex-col items-center text-center">
+              <div class="bg-red-500 p-4 rounded-full">
+                  <img class="w-[40px]" src="asset 13.svg" alt="">
+              </div>
+              <h3 class="mt-4 font-semibold text-lg">Preference tests</h3>
+              <p class="text-gray-600">Find out which designs users prefer and why.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+  
+          <!-- Five Second Tests -->
+          <div class="flex flex-col items-center text-center">
+              <div class="bg-blue-400 p-4 rounded-full">
+                  <img class="w-[40px]" src="asset 14.svg" alt="">
+              </div>
+              <h3 class="mt-4 font-semibold text-lg">Five second tests</h3>
+              <p class="text-gray-600">Test comprehensibility by measuring first impressions.</p>
+              <button class="mt-3 px-4 py-2 border-gray-300 border-2 rounded-md hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-300">Learn more →</button>
+          </div>
+      </div>
+  </div>
+    <!-- HERO SECTION 4 -->
+     <div class="flex flex-row mt-[30px] mx-[250px]">
+       <!-- IMAGE PART -->
+       <div class="content-start">
+        <img class="max-w-[500px] h-auto" src="asset 15.png" alt="#">
+       </div>
+      <!-- RIGHT PART  -->
+       <div class="mt-[207px]">
+        <h6 class="font-poppins font-semibold text-sm" >Effortless validation for</h6>
+        <h2 class="font-bold text-xl">Design professionals</h2>
+        <p class="w-[480px] h-[65px] font-sans py-2 px-0 mr-5  text-[#577592]" 
+        style="line-height: 28.8px;">
+        Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.
+     </p>
+     </div>
+    </div>
+
+    <!-- HERO SECTION 5 -->
+    <div class="flex flex-row mt-[30px] mx-[250px]">
+     <!-- LEFT PART  -->
+      <div class="mt-[207px]">
+       <h6 class="font-poppins font-semibold text-sm" >Optimisation for</h6>
+       <h2 class="font-bold text-xl">Marketers</h2>
+       <p class="w-[480px] h-[65px] font-sans py-2 px-0 mr-5  text-[#577592]" 
+       style="line-height: 28.8px;">
+       Fine-tune landing pages, messaging, and creative, helping you optimise conversion rates on marketing campaigns and product launches.
+    </p>
+    </div>
+    <!-- IMAGE PART -->
+    <div class="content-start">
+      <img class="max-w-[500px] h-auto" src="asset 20.png" alt="#">
+     </div>
+   </div>
+
+   <!-- HERO SECTION 6 -->
+   <div class="flex flex-row mt-[30px] mx-[250px]">
+    <!-- IMAGE PART -->
+    <div class="content-start">
+     <img class="max-w-[500px] h-auto" src="asset 21.png" alt="#">
+    </div>
+   <!-- RIGHT PART  -->
+    <div class="mt-[207px]">
+     <h6 class="font-poppins font-semibold text-sm" >Easier decision making for</h6>
+     <h2 class="font-bold text-xl">Product managers</h2>
+     <p class="w-[480px] h-[65px] font-sans py-2 px-0 mr-5  text-[#577592]" 
+     style="line-height: 28.8px;">
+     Ensure you’re delivering the right features to the right customers by validating product concepts with your target audience.
+  </p>
+  </div>
+ </div>    
+
+  <!-- HERO SECTION 7 -->
+   <div class="relative flex flex-col mx-[350px] items-center justify-between mt-[45px]">
+    <!-- UPPER SECTION -->
+    <div>
+      <h1 class="font-poppins font-bold" style="font-size: 25px;">One platform, endless possibilities</h1>
+      <button class="mt-1 absolute left-72  items-center justify-between place-content-between border-2 border-gray-600 rounded-sm pt-1 pb-1 pr-2 pl-2 hover:border-blue-600 hover:text-blue-600">See more examples<i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+   </div>
+
+  <!-- HERO SECTION 8 -->
+   <div class="mt-[80px] h-[350px] place-content-center" style="background-color: #183b56;">
+    <div class="flex flex-col mx-[350px]  items-center mb-[350px] justify-between">
+    <div class="mr-4 items-center justify-center align-middle  mt-[120px] pr-3">
+      <h1 class="font-bold text-white text-2xl mx-[40px]">Start testing today</h1>
+      <p class="text-white mt-11 font-extralight">Take the guesswork out of design decisions</p>
+      <button class="hover:bg-blue-900 hover:shadow-black text-white border-2 border-gray-600 pr-3 pb-2 pt-2 pl-3 rounded-xl bg-blue-500 mx-[100px] mt-[20px]">Get Started</button>
+    </div>
+  </div>
+   </div>
+
+   <!-- SALUTATION SECTION -->
+   <div class="bg-gray-100">
+    
+    <footer class="bg-blue-100">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-2 w-full h-full ">
+                    <img src="asset 0.png" alt="Logo">
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="text-gray-900 font-semibold">Products</h3>
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li><a href="#" class="hover:underline">Overview</a></li>
+                        <li><a href="#" class="hover:underline">Pricing</a></li>
+                        <li><a href="#" class="hover:underline">Usability Hub</a></li>
+                        <li><a href="#" class="hover:underline">Customers Page</a></li>
+                        <li><a href="#" class="hover:underline">Status Page</a></li>
+                    </ul>
+                </div>
+
+                <!-- Methodologies -->
+                <div>
+                    <h3 class="text-gray-900 font-semibold">Methodologies</h3>
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li><a href="#" class="hover:underline">Card Sorting</a></li>
+                        <li><a href="#" class="hover:underline">Prototype Testing</a></li>
+                        <li><a href="#" class="hover:underline">First Click Tests</a></li>
+                        <li><a href="#" class="hover:underline">Preference Tests</a></li>
+                        <li><a href="#" class="hover:underline">Five Second Tests</a></li>
+                        <li><a href="#" class="hover:underline">Design Surveys</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-gray-900 font-semibold">Resources</h3>
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Examples</a></li>
+                        <li><a href="#" class="hover:underline">Testing Guides</a></li>
+                        <li><a href="#" class="hover:underline">Help Center</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-10 border-t border-gray-300 pt-6 flex flex-col md:flex-row items-center justify-between text-gray-600 text-sm">
+                <div class="space-x-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms & Condition</a>
+                    <a href="#" class="hover:underline">Security Information</a>
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-600 hover:text-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12a10 10 0 1 0-11 9.95v-7h-2v-3h2V9.5a3 3 0 0 1 3-3h2v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6a8.94 8.94 0 0 1-2.5.69a4.38 4.38 0 0 0 1.92-2.41a8.82 8.82 0 0 1-2.79 1.06a4.4 4.4 0 0 0-7.53 4A12.5 12.5 0 0 1 3 4.59a4.38 4.38 0 0 0 1.36 5.88a4.4 4.4 0 0 1-2-.55v.06a4.4 4.4 0 0 0 3.52 4.31a4.41 4.41 0 0 1-2 .08a4.4 4.4 0 0 0 4.11 3.06a8.85 8.85 0 0 1-5.48 1.88a9 9 0 0 1-1-.06a12.47 12.47 0 0 0 6.75 2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </div>
+  </div>
+</body>
+</html>
